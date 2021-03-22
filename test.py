@@ -28,15 +28,6 @@ class AmazonHomePage(unittest.TestCase):
         # test whether correct URL/ Web Site has been loaded or not
         self.assertIn("Amazon",driver.title)
 
-    def test_load_home_page_Failed(self):
-        # to initialize a variable to hold reference of webdriver instance being passed to the function as a reference.
-        driver=self.driver
-        # to load a given URL in browser window
-        driver.get(self.base_url)
-        
-        # test whether correct URL/ Web Site has been loaded or not
-        self.assertIn("Google",driver.title)
-
     def test_load_home_page_Passed(self):
         # to initialize a variable to hold reference of webdriver instance being passed to the function as a reference.
         driver=self.driver
